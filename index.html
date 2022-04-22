@@ -19,12 +19,15 @@
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">NETFLIX</h2>
+            <div class="logo">
+                <a href="https://studioghibli.com.br/" target="blank"><img src="img/ghibli-logo.png" alt=""></a>
+                <h2 class="logo">GHIBLI HOMAGE</h2>
+            </div>
             <nav>
                 <a href="#">Inicio</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentários</a>
+                <a target="blank" href="https://pt.wikipedia.org/wiki/Studio_Ghibli">Wiki</a>
+                <a href="#filmes">Filmes</a>
+                <a href="#documentarios">Documentários</a>
             </nav>
         </div>
     </header>
@@ -35,56 +38,92 @@
                 <h3 class="titulo">Howl's Moving Castle</h3>
                 <p class="descricao">When Sophie, a shy young woman, is cursed with an old body by a spiteful witch, her only chance of breaking the spell lies with a self-indulgent yet insecure young wizard and his companions in his legged, walking castle.</p>
                 <div class="botoes">
-                    <button role="button" class=botao>
+                    <button role="button" class=botao id="soundButton">
                         <i class="fa-solid fa-play"></i>
-                        ASSISTIR AGORA
+                        OUÇA NO YOUTUBE
                     </button role="button" class=botao>
-                    <button role="button" class=botao>
+                    <button role="button" class=botao id="infoButton">
                         <i class="fa-solid fa-circle-info"></i>
-                        MAIS INFORMAÇÕES
+                        MOVIE DATABASE
                     </button role="button" class=botao>
                 </div>
+            
             </div>
         </div>
     </main>
 
-    <div class="carrosel-filmes">
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <img src="img/min01.jpg" alt="" class="box-filme">
-            </div>
-            <div class="item">
-                <img src="img/min02.jpg" alt="" class="box-filme">
-            </div>
-            <div class="item">
-                <img src="img/min03.jpg" alt="" class="box-filme">
-            </div>
-            <div class="item">
-                <img src="img/min04.jpg" alt="" class="box-filme">
-            </div>
-            <div class="item">
-                <img src="img/min05.jpg" alt="" class="box-filme">
-            </div>
-            <div class="item">
-                <img src="img/min06.jpg" alt="" class="box-filme">
-            </div>
-            <div class="item">
-                <img src="img/min07.jpg" alt="" class="box-filme">
-            </div>
-            <div class="item">
-                <img src="img/min08.jpg" alt="" class="box-filme">
-            </div>
-            <div class="item">
-                <img src="img/min09.jpg" alt="" class="box-filme">
+    <div class="carrosel">
+        <div class="carrosel-filmes" id="filmes">
+            <h3>Filmes</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="img/filmes/min01.jpg" alt="" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/filmes/min02.jpg" alt="" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/filmes/min03.jpg" alt="" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/filmes/min04.jpg" alt="" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/filmes/min05.jpg" alt="" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/filmes/min06.jpg" alt="" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/filmes/min07.jpg" alt="" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/filmes/min08.jpg" alt="" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/filmes/min09.jpg" alt="" class="box-filme">
+                </div>
             </div>
         </div>
-    </div>
+    
+        <div class="carrosel-docs" id="documentarios">
+            <h3>Documentários</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="img/docs/min01.jpg" alt="" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/docs/min02.jpg" alt="" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/docs/min03.jpg" alt="" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/docs/min04.jpg" alt="" class="box-filme">
+                </div>
+                <div class="item">
+                    <img src="img/docs/min05.jpg" alt="" class="box-filme">
+                </div>
+            </div>
+        </div>
+    </div>   
 
 
     <script src="https://kit.fontawesome.com/c3ab3097bd.js" crossorigin="anonymous"></script></body>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
+
+    <script type="text/javascript">
+        document.getElementById("infoButton").onclick = function () {
+            location.href = "https://www.themoviedb.org/company/10342/movie";
+        };
+    </script>
+    <script type="text/javascript">
+        document.getElementById("soundButton").onclick = function () {
+            location.href = "https://youtu.be/7voSN82FGF0";
+        };
+    </script>
 
 
 </html>
